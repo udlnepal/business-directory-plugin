@@ -1,0 +1,185 @@
+.wpbdp-admin-page-fees .tablenav {
+    display: none;
+}
+
+#wpbdp-admin-admin-page-fees .column-attributes .wpbdp-tag {
+    background: green;
+    color: #fff;
+}
+
+.wpbdp-admin-page-fees .wp-list-table .wpbdp-drag-handle {
+    margin-right: 15px;
+    display: none;
+}
+
+.wpbdp-admin-page-fees .purchase-gateways {
+    margin-left: 20px;
+}
+
+.wpbdp-admin-page-fees .purchase-gateways .gateway {
+    float: left;
+    width: 35%;
+    margin: 30px 20px 0 0;
+/*    height: 180px;*/
+}
+
+.wpbdp-admin-page-fees .purchase-gateways .gateway.installed {
+    opacity: 0.5;
+}
+
+.wpbdp-admin-page-fees .purchase-gateways .gateway a img.gateway-logo {
+/*    width: 30%;*/
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.wpbdp-admin-page-fees .purchase-gateways .gateway a.price {
+    margin-top: 10px;
+    display: block;
+    color: green;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.wpbdp-admin-page-fees .purchase-gateways .gateway .check-mark {
+    font-size: 150%;
+    font-weight: bold;
+    color: green;
+}
+
+#wpbdp-fee-form {
+    #limit-categories-list {
+        font-size: 90%;
+
+        p {
+            margin: 10px 0;
+        }
+
+        select {
+            width: 100%;
+        }
+
+        .select2-selection {
+            padding: 0 0 2px 0;
+            margin: 0;
+            border-radius: 5px;
+            border-color: rgb(221, 221, 221);
+            min-height: 26px;
+        }
+
+        .select2-selection__choice {
+            border: none;
+            padding: 0;
+            margin: 2px 4px 0 0;
+            .wpbdp-tag;
+
+            .select2-selection__choice__remove {
+                color: #fff;
+            }
+        }
+
+        .select2-search {
+            margin-bottom: 0;
+        }
+
+        .wpbdp-category-item {
+            width: 33.33%;
+            float: left;
+            padding: 2px 0;
+        }
+    }
+
+    .pricing-details-variable {
+        &> td {
+            padding-top: 0;
+        }
+
+        table {
+            th {
+                font-weight: normal;
+            }
+
+            td:last-child {
+                width: 100%;
+            }
+
+            td {
+                &.category-name-col {
+                    padding-right: 20px;
+                    text-align: right;
+                }
+
+                &.category-price-col {
+                }
+
+                font-size: 90%;
+                padding: 0;
+            }
+        }
+
+        .wpbdp-variable-pricing-configurator-row {
+            input {
+                width: 100px;
+            }
+        }
+    }
+
+    .pricing-options {
+        label {
+            display: block;
+        }
+    }
+
+    .fee-pricing-details {
+        input[type="text"] {
+            width: 100px;
+        }
+    }
+}
+
+#wpbdp-fee-form #fee-bgcolor-picker {
+    position: relative;
+
+    input#fee-bgcolor-value {
+        border: none;
+        cursor: pointer;
+    }
+
+    .color-selection {
+        left: 5px;
+        display: none;
+        position: absolute;
+        background: #fff;
+        padding: 10px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .color-selection-btns {
+        margin: 0 0 10px 0;
+        font-size: 12px;
+
+        a {
+            text-decoration: none;
+        }
+
+        a.close-btn {
+            float: right;
+            color: #999;
+        }
+
+        a.reset-btn .no-color-img {
+            background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M0 99 L99 0 L100 1 L1 100' fill='#ff0000' /></svg>");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100% 100%, auto;
+            background-color: #fff;
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            border: solid 1px #000;
+        }
+    }
+
+}

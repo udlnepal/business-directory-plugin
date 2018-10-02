@@ -1,0 +1,245 @@
+/**
+ * Listing metabox styles.
+ * @since 3.4
+ */
+
+#BusinessDirectory_listinginfo .inside {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* @group Tab selector. */
+.listing-metabox-tabs {
+    display: block;
+    border-bottom: solid 1px #ddd !important;
+}
+
+.listing-metabox-tabs li {
+    display: inline;
+    padding: 1px 8px;
+    margin: 0;
+}
+
+.listing-metabox-tabs li a {
+    text-decoration: none;
+}
+
+.listing-metabox-tabs li.selected {
+    background: #ddd;
+}
+
+.listing-metabox-tabs li.selected a {
+    color: #333;
+}
+
+#listing-metabox-generalinfo, #listing-metabox-fees, #listing-metabox-transactions {
+    display: none;
+}
+
+#listing-metabox-generalinfo > strong, #listing-metabox-fees > strong, #listing-metabox-transactions > strong {
+    display: block;
+    margin-bottom: 10px;
+}
+/* @end */
+
+/* @group Fees. */
+#listing-metabox-fees .listing-plan {
+    border-bottom: dotted 1px #bbb;
+}
+
+#listing-metabox-fees .listing-plan .plan-label {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#listing-metabox-fees .listing-plan .plan-status {
+}
+
+#listing-metabox-fees .listing-plan .plan-status.ok { background: green; }
+#listing-metabox-fees .listing-plan .plan-status.pending { background: red; }
+
+#listing-metabox-fees .listing-plan .plan-details {
+    margin-left: 25px;
+}
+
+a dl {
+    margin: 0;
+    clear: both;
+}
+
+#listing-metabox-fees .listing-plan dt {
+    float: left;
+    color: #595959;
+    width: 80px;
+}
+
+#listing-metabox-fees .listing-plan .listing-category dd {
+    margin-bottom: 0;
+}
+
+#listing-metabox-fees .listing-plan .spinner {
+    text-align: center;
+    display: block;
+    float: none;
+    margin: 10px auto;
+}
+
+#listing-metabox-fees .listing-plan .datepicker {
+    position: absolute;
+    z-index: 100;
+    right: 10px;
+    font-size: 80%;
+}
+
+#listing-metabox-fees .listing-plan .admin-actions {
+    margin-top: 10px;
+    margin-left: 25px;
+    clear: both;
+}
+
+#listing-metabox-fees .listing-plan .admin-actions li {
+    margin: 0;
+    padding: 0;
+}
+/* @end */
+
+#wpbdp-listing-metabox-payments {
+
+    .wpbdp-payment-item {
+        padding: 2px;
+        border-bottom: solid 1px #efefef;
+        clear: both;
+        font-size: 95%;
+
+        &:first-child {
+            margin-top: 12px;
+        }
+
+        &.wpbdp-payment-status-completed {
+            color: green;
+        }
+
+        &.wpbdp-payment-status-pending {
+            color: red;
+        }
+
+        &.wpbdp-payment-status-rejected {
+            color: #bbb;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .wpbdp-payment-item-row {
+            clear: both;
+        }
+
+        .wpbdp-payment-date,
+        .wpbdp-payment-summary {
+            float: left;
+        }
+
+        .wpbdp-payment-summary {
+            width: 150px;
+            // text-overflow: ellipsis;
+            // white-space: nowrap;
+            // overflow: hidden;
+
+            a {
+                font-size: 95%;
+            }
+        }
+
+        .wpbdp-payment-status,
+        .wpbdp-payment-total {
+            text-align: right;
+        }
+
+    }
+
+}
+
+#wpbdp-listing-metabox-plan-info {
+    h4 {
+        margin: 0 0 5px 0;
+        font-size: 85%;
+        text-transform: uppercase;
+    }
+
+    dl {
+        margin: 0 0 20px 10px;
+
+        dt {
+        }
+
+        dd {
+            margin-left: 30px;
+        }
+    }
+
+    .display-value {
+    }
+
+    .value-editor {
+        display: none;
+
+        .update-value, .cancel-edit {
+            font-size: 85%;
+        }
+    }
+
+    a.edit-value-toggle {
+        margin: 0 0 0 10px;
+        font-size: 85%;
+    }
+
+}
+
+#wpbdp-listing-flagging {
+    .inside {
+        margin: 0;
+        padding: 0;
+
+        .authoring-info {
+            width: 25%;
+        }
+
+        .wpbdp-remove-listing-reports {
+            padding: 10px;
+        }
+    }
+}
+
+#wpbdp-listing-reports {
+    margin-left: 10px;
+}
+
+#wpbdp-listing-report-by-users {
+    margin: 0;
+    padding: 0;
+}
+
+#wpbdp-listing-report-by-visitors {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+#wpbdp-listing-metabox-payments table tr a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#wpbdp-listing-metabox-payments table tr a:hover {
+    text-decoration: underline;
+}
+*/
+
+#wpbdp-listing-flagging {
+    table.widefat {
+        border: 0;
+        border-bottom: 1px solid #E5E5E5;
+    }
+}
